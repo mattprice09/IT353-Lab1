@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Home page for Matt Price, completed for ITK353 at ILSTU.">
+    <meta name="keywords" content="Matt Price, software development, web application development, ilstu">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Matt Price Home Page</title>
+
+    <!-- Custom styles for this template -->
+    <link href=".\css\offcanvas.css" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+			
+          <a class="navbar-brand" href="#">IT 353</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-xs-4 sidebar-offcanvas" id="sidebar">
+          <div class="row">
+            <div class="col-xs-12">
+              <img src=".\media\Photo.jpg" class="img-responsive img-circle portrait" alt="Self Portrait">
+            </div>
+          </div><!--/row-->
+          <hr>
+          <div class="row">
+            <div class="col-xs-8 col-xs-offset-1 info-text">
+              <address>
+                <strong>Contact Information</strong><br>
+                <a href="mailto:mrprice@ilstu.edu?Subject=Greetings" target="_top">mrprice@ilstu.edu</a><br>
+                C: (708)601-5840<br>
+                Normal, IL
+              </address>
+            </div>
+            <div class="col-xs-4"></div>
+          </div><!--/row-->
+          <hr>
+          <div class="row">
+            <button type="button" class="btn btn-info btn-block" type="button" onClick="promptUser();">
+              Feeling lonely?
+            </button>
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+
+        <div class="col-xs-8">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+          <div class="jumbotron">
+            <div class="container">
+              <h1>Matt Price</h1>
+                <ul>
+                  <li><strong><em>Lead Programmer</em></strong>, Human Trafficking Initiative</li>
+                  <li><strong><em>Bachelor of Science, Computer Science</em></strong>, Illinois State University</li>
+                  <li><strong><em>Summer 2016 Software Engineer Intern</em></strong>, GoDaddy - San Francisco</li>
+                </ul>
+            </div>
+          </div><!--/jumbotron-->
+          <div class="row">
+            <div class="col-xs-6 col-lg-4">
+              <button class="btn btn-primary btn-block" type="button" data-toggle="collapse" data-target="#collapse1">
+                Basic Info
+              </button>
+              <div class="collapse custom-collapse" id="collapse1">
+                <pre>
+I am a...
+
+  Junior at ISU.
+
+  Full-time employee.
+
+  Native of Frankfort, IL.
+
+  Owner of a nice cat.
+                </pre>
+              </div><!--/custom-collapse-->
+            </div><!--/.col-xs-6.col-lg-4-->
+            <div class="col-xs-6 col-lg-4">
+              <button class="btn btn-success btn-block" type="button" data-toggle="collapse" data-target="#collapse2">
+                What I like to do!
+              </button>
+              <div class="collapse custom-collapse" id="collapse2">
+                <ul>
+                  <li>Ice hockey</li>
+                  <li>Fantasy sports</li>
+                  <li>Programming</li>
+                  <li>Socialize</li>
+                  <li>Video games</li>
+                </ul>
+              </div><!--/custom-collapse-->
+            </div><!--/.col-xs-6.col-lg-4-->
+            <div class="col-xs-6 col-lg-4">
+              <button class="btn btn-danger btn-block" type="button" data-toggle="collapse" data-target="#collapse3">
+                Top 3 Websites
+              </button>
+              <div class="collapse custom-collapse" id="collapse3">
+                <ol>
+                  <li><a href="#">My home page!</a></li>
+                  <li><a href="http://www.nhl.com" target="_blank">NHL.com</a></li>
+                  <li><a href="http://bigocheatsheet.com" target="_blank">Big-O Cheat Sheet (very handy!)</a></li>
+                </ol>
+              </div><!--/custom-collapse-->
+            </div><!--/.col-xs-6.col-lg-4-->
+
+          </div><!--/row (of collapsable buttons)-->
+
+          <hr>
+
+          <div class="row">
+            <div class="col-xs-5">
+              <h2 align="center">Statement</h2>
+              <hr>
+              <p>If there was one thing I wanted to share, it would be about my upcoming summer internship at GoDaddy.
+                My supervisor told me my role will be considered full-stack, meaning lots of web development. I've done a few
+                hackathons and made some web applications, however I am still a novice with web dev. My goal is to learn an abundance of knowledge/skills this semester in an attempt to prepare myself as much as possible for my upcoming internship. </p>
+            </div>
+            <div class="col-xs-7">
+              <h2 align="center">Q&A</h2>
+              <hr>
+              <h5><strong><em>Do you have Java experience?</em></strong></h5>
+              <p class="answers-p">Yes. I've taken IT169 and IT179 at ISU, and I also took an Android development 
+                class at Parkland College. Furthermore, I've coded in Java for large projects at work and also for
+                 my own side projects.</p>
+              <h5><strong><em>Do you have Database experience?</em></strong></h5>
+              <p class="answers-p">Yes. I just finished IT261 at ISU, and I also took a database theory course at Parkland
+                College. I also have experience with databases from work. We are operating big data with a MongoDB and are
+                currently in the preliminary phases of designing a relational database.</p>
+              <h5><strong><em>Do you any Web development experience?</em></strong></h5>
+              <p class="answers-p">Yes. There are three projects that I've been a part of:</p><br>
+              <ul>
+                <li><strong>Home Fly</strong> - Web app for homeless individuals to find the nearest homeless shelter and 
+                  get information including address, phone number, and number of available beds. User inputs their address
+                  and gets all shelters within 10 miles. We used the Meteor framework and won HuskieHack with it.</li>
+                <li><strong>UniSound</strong> - Another hackathon project. It is a social jukebox web app in which users
+                  can either host or join a party. It utilizes Spotify's API so that users can search for songs and queue
+                  them up into the party's playlist in real time. We used FireBase for our back-end.</li>
+                <li><strong>HTI Dashboard</strong> - A dashboard for our database at work. We use Flask + pymongo for our
+                  backend. For our frontend, I think I'm going to implement Bootstrap as soon as I get a hang of it!!</li>
+            </div>
+          </div><!--/row-->
+        </div><!--/.col-xs-12.col-sm-9-->
+
+
+      </div><!--/row-->
+
+      <hr>
+
+        <div class="row">
+          <div class="col-xs-4">
+            <h5>A dog taking what is rightfully his...</h2>
+            <img src=".\media\Gif.jpg" class="img-responsive img-rounded" alt="Dog Gif">
+          </div>
+          <div class="col-xs-8">
+            <h2 align="center"><strong>Assignments</strong></h2>
+            <hr>
+            <div class="row">
+              <div class="col-xs-4">
+                <div class="btn-group-vertical" role="group">
+                  <button type="button" class="btn btn-default btn-block" onclick="showAnswer('mashups_answer');">Mashups: The new breed of Web app</button>
+                  <button type="button" class="btn btn-default btn-block" onclick="showAnswer('duolingo-answer');">The man who wants to translate the Web</button>
+                </div>
+              </div>
+              <div class="col-xs-7 col-xs-offset-1">
+                <div class="panel panel-default assignment-answer" id="mashups_answer">
+                  <div class="panel-body">
+                    Mashups: The new breed of Web app is all about the new age of web applications - mashups. Essentially,
+                    a mashup is a web app that utilizes different data sources or APIs. As an example, I'll use my Home Fly
+                    project listed above. We utilized both the Google Places API and web-scraped data about shelter listings.
+                    These were conglomerated into a web app that matched the addresses from the web-scraped data to the actual
+                    location that Google provided.<br><br>
+                    One of the things in the article that stuck with me the most was about Ajax. First off, the article states
+                    that Ajax requires JavaScript to be enabled. Because of this, robots, spiders, and web crawlers are unable
+                    to navigate through your page if you use Ajax frequently. This is a huge piece of information as this is
+                    capable of destroying a web page's search engine visibility. Not only that, but the article explains that,
+                    if user-updated content is tied only to an Ajax call, it will not be reinstated when the BACK button is pressed.
+                    Perhaps this is what happens when you fill out a form, click Next, then go back, only to find that you have
+                    to redo the entire form.
+                  </div>
+                </div> <!--/mashups_answer-->
+                <div class="panel panel-default assignment-answer" id="duolingo-answer">
+                  <div class="panel-body">
+                    The man who wants to translate the Web is an article about a guy's startup company. The company is called
+                    Duolingo and its purpose is to make the Web intelligible through any spoken language. That is, the company's
+                    goal is to essentially be able to translate any web page. Obviously, this would be a great accomplishment.
+                    There are just a couple of drawbacks.<br><br>
+                    First off, finding enough people to accurately translate between two languages is difficult. To add to that,
+                    PAYING these people who can translate for the company would be nearly impossible. This is how Duolingo evolved
+                    into its current business model: for the price of your education results, you can learn a language for free
+                    on their platform. The company simply uses your data as food for their machine learning algorithms and, 
+                    ultimately, their database. 
+                  </div>
+                </div><!--/duolingo-answer-->
+              </div><!--/col-xs-7-->
+            </div><!--/row-->
+          </div><!--/col-xs-8 (answers/panels column)-->
+        </div><!--/row (contains gif and assignments)-->
+      <hr>
+
+      <footer>
+        <p>&copy; 2016 ITK353</p>
+      </footer>
+
+    </div><!--/.container-->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src=".\js\offcanvas.js"></script>
+	<script src=".\js\Navigation.js"></script>
+  </body>
+</html>
