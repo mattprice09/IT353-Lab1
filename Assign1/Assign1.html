@@ -187,7 +187,7 @@ I am a...
             <img src=".\media\Gif.jpg" class="img-responsive img-rounded" alt="Dog Gif">
           </div>
           <div class="col-xs-8">
-            <h2 align="center"><strong>Assignments</strong></h2>
+            <h2 align="center"><strong>Lab1 Assignments</strong></h2>
             <hr>
             <div class="row">
               <div class="col-xs-4">
@@ -230,7 +230,99 @@ I am a...
             </div><!--/row-->
           </div><!--/col-xs-8 (answers/panels column)-->
         </div><!--/row (contains gif and assignments)-->
-      <hr>
+		<hr>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="row">
+          <button class="btn btn-warning btn-lg btn-block" type="submit" onclick="testScores();">Get Test Score Info</button>
+        </div>
+      </div>
+    </div><!--row (get Test Scores function)-->
+
+    <hr>
+		
+		<div class="row">
+		  <div class="col-xs-12">
+		    <div class="row">
+          <div class="panel panel-primary">
+            <div class="panel-heading" align="center"><strong>NHL Survey</strong></div>
+            <div class="panel-body">
+              <form name="trivia" method="get" id="nhl_form" action="http://was6.itk.ilstu.edu:9080/itk/EchoAll">
+                <div class="row">
+                  <div class="col-xs-2">
+                    <p>Enter your name: </p>
+                    <input type="text" name="User Name" id="user_name" size="20">
+                    <p>Password: </p>
+                    <input type="password" name="Password" id="user_pw"><br><br>
+                    <div class="btn-group" role="group">
+                      <button type="submit" class="btn btn-success" value="Submit">Submit</button>
+                      <button type="reset" class="btn btn-danger" value="Reset">Reset</button><br>
+                      <input type="hidden" name="Hidden" value="You found me!!">
+                    </div>
+                  </div>
+                  <div class="col-xs-3">
+                    <p>When did you start watching hockey? </p>
+                    <input type="radio" name="Started" value="Never"> I don't watch hockey<br>
+                    <input type="radio" name="Started" value="Pre-70s"> Before 1970<br>
+                    <input type="radio" name="Started" value="70s"> 70s<br>
+                    <input type="radio" name="Started" value="80s"> 80s - The Gretzky Era<br>
+                    <input type="radio" name="Started" value="90s"> 90s<br>
+                    <input type="radio" name="Started" value="00s"> 00s<br>
+                    <input type="radio" name="Started" value="10s"> Sometime from 2010 to present<br>
+                  </div>
+                  <div class="col-xs-3">
+                    <p><strong>Why</strong> did you start watching hockey?</p>
+                    <input type="checkbox" name="Reason" value="Because it's awesome!"> Because it's awesome!<br>
+                    <input type="checkbox" name="Reason" value="I was born into it - family culture"> I was born into it - family culture<br>
+                    <input type="checkbox" name="Reason" value="I watched my nearby team's success and got hooked"> I watched my nearby team's success and got hooked<br>
+                    <input type="checkbox" name="Reason" value="Because I played/still play hockey"> Because I played/still play hockey<br>
+                    <input type="checkbox" name="Reason" value="It's a fun social event"> It's a fun social event<br>
+                    <input type="checkbox" name="Reason" value="I'm being forced to watch it against my will"> I'm being forced to watch it against my will<br>
+                  </div>
+                  <div class="col-xs-4">
+                    <p>Choose your question and then answer it!</p>
+                    <select>
+                      <option type="input" value="What is your favorite NHL team?" form="nhl_form">What is your favorite NHL team?</option>
+                      <option value="Who is your favorite player?" form="nhl_form">Who is your favorite player?</option>
+                      <option value="Have you ever played with any NHLers?" form="nhl_form">Have you ever played with any NHLers?</option>
+                      <option value-"If not hockey, which other sport is your favorite?" form="nhl_form">If not hockey, which other sport is your favorite?</option>
+                    </select>
+                    <textarea rows="4" cols="44" value="Answer" placeholder="Answer..." form="nhl_form"></textarea>
+                  </div>
+                </div><!--row-->
+              </form>
+            </div>            
+          </div>
+        </div>
+		  </div><!--/col-xs-12-->
+		</div> <!--/row (NHL survey)-->
+
+    <div class="row">
+      <table style="table-style" border="1">
+        <tr>
+          <th class="odd-heading" colspan=4>
+            <h3 align="center" style="color:yellow"><strong>Assignment1 Answers</strong></h3>
+          </th>
+        </tr>
+        <tr>
+          <th><h4 align="center">What is SEO and why is it important?<h4></th>
+          <th><h4 align="center">How the Web Works</h4></th>
+          <th><h4 align="center">What is Cloud Computing and how is it different from the traditional computing involving data centers, etc.?</h4></th>
+          <th><h4 align="center">What is a Web (Application) Framework? Name 3 examples of this.</h4></th>
+        </tr>
+        <tr>
+          <td>
+            SEO stands for Search Engine Optimization. It is extremely important for businesses because it is the core of web visibility. SEO is essentially the degree to which you make your website visible and relevant to search engines. If you do well with your SEO through the use of solid keywords, credible site-to-site links, busy traffic, and easy crawlability for spiders, then you will have a good shot at getting to the first page on search results.
+          </td>
+          <td rowspan="2">
+            The first, more basic article is an article meant to introduce newbies on the basics of how the web works. The second article is a more detailed article whose purpose is to explain exactly <em>how</em> the web works.
+            One of the things I noticed right away is the presence of GET and POST explanations in the second article. This information is vital to developing web applications as it is the core of how web communication works. I also noticed that they mentioned browser redirects from http://facebook.com to http://www.facebook.com. The article states that this helps with SEO. This is something that I am going to take into account and implement immediately into a couple websites I'm managing. Lastly, I was not aware that the response in the GET request was a small-sized zip file containing the HTML, with the rest of the GET requests for pictures and whatnot coming afterwards. This must be part of the reason why the JavaScript files should be initialized at the end of the HTML document.
+          </td>
+        </tr>
+      </table>
+
+    </div><!--/div (table containing answers to questions)-->
 
       <footer>
         <p>&copy; 2016 ITK353</p>
@@ -241,6 +333,6 @@ I am a...
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src=".\js\offcanvas.js"></script>
-	<script src=".\js\Navigation.js"></script>
+	<script src=".\js\Functions.js"></script>
   </body>
 </html>
