@@ -239,6 +239,29 @@ I am a...
         </div>
       </div>
     </div><!--row (get Test Scores function)-->
+	
+	  <div class="row">
+      <div class="col-xs-12">
+        <div class="row">
+          <button class="btn btn-success btn-lg btn-block" type="submit" onclick="calcPay();">Get Paid</button>
+        </div>
+      </div>
+    </div><!--row (Calculate Pay function)-->
+
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="row">
+          <button class="btn btn-danger btn-lg btn-block" type="submit" onclick="HTML_5_Pane();">HTML5 Included</button>
+          <div class="panel panel-default" style="display:none" id="html5_pane">
+            <div class="panel-body">
+              <p>
+                <strong>Placeholder:</strong> Seen in the NHL Survey form below. The placeholder is located in the textarea element.<hr><strong>Required:</strong> Also seen in the NHL Survey - it is required that the user enters a username and password if they wish to submit the form.<hr><strong>Email:</strong> Used in the form at the bottom of the page titled Demographics. The email tag is used to allow users to enter their email in the correct format. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--row (Calculate Pay function)-->
 
     <hr>
 		
@@ -252,9 +275,9 @@ I am a...
                 <div class="row">
                   <div class="col-xs-2">
                     <p>Enter your name: </p>
-                    <input type="text" name="User Name" id="user_name" size="20">
+                    <input type="text" name="User Name" id="user_name" size="20" required>
                     <p>Password: </p>
-                    <input type="password" name="Password" id="user_pw"><br><br>
+                    <input type="password" name="Password" id="user_pw" required><br><br>
                     <div class="btn-group" role="group">
                       <button type="submit" class="btn btn-success" value="Submit">Submit</button>
                       <button type="reset" class="btn btn-danger" value="Reset">Reset</button><br>
@@ -319,10 +342,67 @@ I am a...
             The first, more basic article is an article meant to introduce newbies on the basics of how the web works. The second article is a more detailed article whose purpose is to explain exactly <em>how</em> the web works.
             One of the things I noticed right away is the presence of GET and POST explanations in the second article. This information is vital to developing web applications as it is the core of how web communication works. I also noticed that they mentioned browser redirects from http://facebook.com to http://www.facebook.com. The article states that this helps with SEO. This is something that I am going to take into account and implement immediately into a couple websites I'm managing. Lastly, I was not aware that the response in the GET request was a small-sized zip file containing the HTML, with the rest of the GET requests for pictures and whatnot coming afterwards. This must be part of the reason why the JavaScript files should be initialized at the end of the HTML document.
           </td>
+          <td>
+            Cloud Computing is essentially a form of computing in which data and resources are made available to computers on-demand. The biggest difference is that the cloud vastly reduces infrastructure costs for companies because it doesn't require an enormous data center like traditional data centers do. Furthermore, cloud computing allows companies or users to get their projects online faster and keep them going with much less maintainence. 
+          </td>
+          <td>
+            Web Application Frameworks are frameworks for software whose main purpose is to reduce overhead of web application. Not only that, but most frameworks simply make software developers' jobs easier by providing prewritten code. This allows developers to use frameworks to that can reduce potentially hundreds, or thousands, of lines of code into less than 100 lines. Some examples include Flask, Meteor, and Django.
+          </td>
+        </tr>
+        <tr height="100px">
+          <td class="odd-heading"></td>
+          <td class="odd-heading"></td>
+          <td class="odd-heading"></td>
         </tr>
       </table>
 
     </div><!--/div (table containing answers to questions)-->
+
+  <hr>
+
+    <div class="row">
+    <div class="col-xs-2 col-xs-offset-5">
+      <div class="row">
+        <div class="panel panel-primary">
+          <div class="panel-heading" align="center"><strong>Demographics</strong></div>
+          <div class="panel-body" align="center">
+            <form name="demographics" method="get" id="demographics_form" onsubmit="return validateDemographics(this);" action="http://was6.itk.ilstu.edu:9080/itk/EchoAll">
+              <div class="row">
+                <div class="col-xs-12">
+                  <p>Enter your name: </p>
+                  <input type="text" name="User Name" id="user_name" size="20" required><hr>
+                  <input type="radio" name="Gender" id="gender_m" value="male" required>Male<br>
+                  <input type="radio" name="Gender" id="gender_f" value="female" required>Female<hr>
+                  <input type="email" name="Email" placeholder="Email" required><hr>
+                  <input type="text" name="zipCode" placeholder="Zip Code" required><hr>
+                  <select id="select_age" placeholder="Select Age..." required>
+                    <option type="input" value="SelectRange">Select Age...</option>
+                    <option type="input" value="Below 18">Below 18</option>
+                    <option type="input" value="18-39">18-39</option>
+                    <option type="input" value="40 or above">40 or above</option>
+                  </select><hr>
+                  
+                  <div class="btn-group" role="group">
+                    <button type="submit" class="btn btn-success" value="Submit">Submit</button>
+                    <button type="reset" class="btn btn-danger" value="Reset">Reset</button><br>
+                    <input type="hidden" name="Hidden" value="You found me!!">
+                  </div>
+                </div>
+                
+              </div><!--row-->
+            </form>
+          </div>            
+        </div>
+      </div>
+    </div><!--/col-xs-12-->
+  </div> <!--/row (NHL survey)-->
+
+  <div class="row">
+    <div class="col-xs-12">
+      <h2 align="center">Screenshots</h2><br>
+      <img src=".\media\TestScores.jpg" class="img-responsive" alt="Screenshots">
+    </div>
+  </div>
 
       <footer>
         <p>&copy; 2016 ITK353</p>
