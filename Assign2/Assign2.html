@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Home page for Matt Price, completed for ITK353 at ILSTU.">
+    <meta name="keywords" content="Matt Price, software development, web application development, ilstu">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Matt Price Home Page</title>
+
+    <!-- Custom styles for this template -->
+    <link href="..\css\offcanvas.css" rel="stylesheet">
+    <link href="..\css\styles.css" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      
+          <a class="navbar-brand" href="#">IT 353</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.htm">Home</a></li>
+            <li><a href="../Assign1/Assign1.html">Assignment 1</a></li>
+            <li class="active"><a href="./Assign2.html">Assignment 2</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+
+    <div class="container">
+
+      <div class="row">
+        <h2 align="center"><strong>Assignment 2</strong></h2>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-xs-3 col-xs-offset-1">
+          <h4><strong>Question 1</strong></h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs nav-stacked" role="tablist">
+            <li role="presentation"><a href="#q1_a" aria-controls="q1_a" role="tab" data-toggle="tab"><strong>Part A</strong></a></li>
+            <li role="presentation"><a href="#q1_b" aria-controls="q1_b" role="tab" data-toggle="tab"><strong>Part B</strong></a></li>
+            <li role="presentation"><a href="#q1_c" aria-controls="q1_c" role="tab" data-toggle="tab"><strong>Part C</strong></a></li>
+            <li role="presentation"><a href="#q1_d" aria-controls="q1_d" role="tab" data-toggle="tab"><strong>Part D</strong></a></li>
+          </ul>
+        </div>
+        <div class="col-xs-9">
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <!-- <div role="tabpanel" class="tab-pane fade in active" id="q1_title"></div> -->
+            <div role="tabpanel" class="tab-pane fade" id="q1_a">
+              <strong>Q: <em>How is the GET method different from POST when it comes to HTML form submission?</em></strong><br><br>
+
+                <strong>A:</strong> The GET method is different than the POST method with HTML form submission in that the GET method displays the user's form input in the address bar while redirecting, whereas the POST method sends the user's form input in the HTTP message body. Also, when the user hits the "Back" button, nothing happens with GET, whereas if a POST method was used, the data will be re-submitted. If you're worried about security and/or privacy, POST is the way to go.
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="q1_b">
+              <strong>Q: <em>Identify several factors/reasons (min of 3 each) for choosing one method (GET/POST) over the other.</em></strong><br><br>
+
+              <strong>A:</strong><br>
+              <table class="table-bordered">
+                <tr>
+                  <th>GET</th>
+                  <th>POST</th>
+                </tr>
+                <tr>
+                  <td>The "back" button doesn't require the user to re-submit the form/data.</td>
+                  <td>The user must re-submit forms/data <em>because</em> the data wasn't cached or kept in the history. This makes POST more secure than GET.</td>
+                </tr>
+                <tr>
+                  <td>If the developer isn't concerned with security, the data is insensitive, or there aren't any important changes after the request, using GET makes navigating easier and more user-friendly than if the request were POST.</td>
+                  <td>If the data <em>is</em> sensitive, or the developer would like to provide more security/privacy, then POST should be used over GET. As stated in Part A, POST doesn't include the user's data as part of the URL. A good use case of POST would be when authenticating credentials. Using GET would defeat the purpose of having password characters hidden while typing. Also, the user's input data isn't cached or stored in browser history, as stated above.</td>
+                </tr>
+                <tr>
+                  <td>A GET request is really most useful when you need to retrieve data (particularly, public data) and there aren't sensitive messages being sent.</td>
+                  <td>POST has no restrictions on the data's length, whereas, because the GET method appends the data to the URL, there is a max length of 2048 characters. This means that POST is a better choice if you have a lot of user input.</td>
+                </tr>
+              </table>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="q1_c">
+              <strong>Q: <em>What does it mean when one gets an HTTP status code in the range of 400-499? What about in the range of 500-599?</em></strong><br><br>
+
+              <strong>A:</strong> An HTTP status code in the range of 400-499 means that there was a client error. An HTTP status code in the 500s means that there was a server error. 
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="q1_d">
+              <strong>Q: <em>What does HTTP status code 403 mean? What about 404? What about 500?</em></strong><br><br>
+
+              <strong>A:</strong><br>
+              <u>403 Forbidden</u> - This essentially happens when the user doesn't have permissions for the requested resource.<br>
+              <u>404 Not Found</u> - This indicates that the requested resource was not found.<br>
+              <u>500 Internal Server Error</u> - This HTTP status code states that there was <em>some</em> error, but it was unable to provide more information. As a developer, this error can be a nightmare if you aren't familiar with the entire framework of the web app. 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>&copy; 2016 ITK353</p>
+      </footer>
+    </div><!--/.container-->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="..\js\offcanvas.js"></script>
+  <script src="..\js\Functions.js"></script>
+  </body>
+</html>
