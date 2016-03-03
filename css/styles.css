@@ -63,3 +63,8 @@ h3 {
   color: #000000;
   font-style: bold;
 }
+
+.small-img {
+  width: 100px;
+  height: 100px;
+}
