@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Home page for Matt Price, completed for ITK353 at ILSTU.">
+    <meta name="keywords" content="Matt Price, software development, web application development, ilstu">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Matt Price Home Page</title>
+
+    <!-- Custom styles for this template -->
+    <link href="..\css\offcanvas.css" rel="stylesheet">
+    <link href="..\css\styles.css" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      
+          <a class="navbar-brand" href="#">IT 353</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../index.htm">Home</a></li>
+            <li><a href="../Assignment1/Assign1.html">Assignment 1</a></li>
+            <li class="active"><a href="./Assign2.html">Assignment 2</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+
+    <div class="container">
+
+      <div class="row">
+        <h2 align="center"><strong>Assignment 2</strong></h2>
+      </div>
+      <hr>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 align="center"><strong>Question 1</strong>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-3">
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs nav-stacked" role="tablist">
+                <li role="presentation"><a href="#q1_a" aria-controls="q1_a" role="tab" data-toggle="tab"><strong>Part A</strong></a></li>
+                <li role="presentation"><a href="#q1_b" aria-controls="q1_b" role="tab" data-toggle="tab"><strong>Part B</strong></a></li>
+                <li role="presentation"><a href="#q1_c" aria-controls="q1_c" role="tab" data-toggle="tab"><strong>Part C</strong></a></li>
+                <li role="presentation"><a href="#q1_d" aria-controls="q1_d" role="tab" data-toggle="tab"><strong>Part D</strong></a></li>
+              </ul>
+            </div>
+            <div class="col-xs-9">
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <!-- <div role="tabpanel" class="tab-pane fade in active" id="q1_title"></div> -->
+                <div role="tabpanel" class="tab-pane fade" id="q1_a">
+                  <strong>Q: <em>How is the GET method different from POST when it comes to HTML form submission?</em></strong><br><br>
+
+                    <strong>A:</strong> The GET method is different than the POST method with HTML form submission in that the GET method displays the user's form input in the address bar while redirecting, whereas the POST method sends the user's form input in the HTTP message body. Also, when the user hits the "Back" button, nothing happens with GET, whereas if a POST method was used, the data will be re-submitted. If you're worried about security and/or privacy, POST is the way to go.
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="q1_b">
+                  <strong>Q: <em>Identify several factors/reasons (min of 3 each) for choosing one method (GET/POST) over the other.</em></strong><br><br>
+
+                  <strong>A:</strong><br>
+                  <table class="table-bordered">
+                    <tr>
+                      <th>GET</th>
+                      <th>POST</th>
+                    </tr>
+                    <tr>
+                      <td>The "back" button doesn't require the user to re-submit the form/data.</td>
+                      <td>The user must re-submit forms/data <em>because</em> the data wasn't cached or kept in the history. This makes POST more secure than GET.</td>
+                    </tr>
+                    <tr>
+                      <td>If the developer isn't concerned with security, the data is insensitive, or there aren't any important changes after the request, using GET makes navigating easier and more user-friendly than if the request were POST.</td>
+                      <td>If the data <em>is</em> sensitive, or the developer would like to provide more security/privacy, then POST should be used over GET. As stated in Part A, POST doesn't include the user's data as part of the URL. A good use case of POST would be when authenticating credentials. Using GET would defeat the purpose of having password characters hidden while typing. Also, the user's input data isn't cached or stored in browser history, as stated above.</td>
+                    </tr>
+                    <tr>
+                      <td>A GET request is really most useful when you need to retrieve data (particularly, public data) and there aren't sensitive messages being sent.</td>
+                      <td>POST has no restrictions on the data's length, whereas, because the GET method appends the data to the URL, there is a max length of 2048 characters. This means that POST is a better choice if you have a lot of user input.</td>
+                    </tr>
+                  </table>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="q1_c">
+                  <strong>Q: <em>What does it mean when one gets an HTTP status code in the range of 400-499? What about in the range of 500-599?</em></strong><br><br>
+
+                  <strong>A:</strong> An HTTP status code in the range of 400-499 means that there was a client error. An HTTP status code in the 500s means that there was a server error. 
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="q1_d">
+                  <strong>Q: <em>What does HTTP status code 403 mean? What about 404? What about 500?</em></strong><br><br>
+
+                  <strong>A:</strong><br>
+                  <u>403 Forbidden</u> - This essentially happens when the user doesn't have permissions for the requested resource.<br>
+                  <u>404 Not Found</u> - This indicates that the requested resource was not found.<br>
+                  <u>500 Internal Server Error</u> - This HTTP status code states that there was <em>some</em> error, but it was unable to provide more information. As a developer, this error can be a nightmare if you aren't familiar with the entire framework of the web app. 
+                </div>
+              </div><!--tab-content (question 1 answers)-->
+            </div><!--col-xs-9 -->
+          </div><!--row (Question 1) -->
+        </div><!--panel-body-->
+      </div><!--panel panel-default-->
+
+      <hr>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h4 align="center"><strong>Question 2</strong>
+            </div>
+            <div class="panel-body">
+              <button type="button" class="btn btn-lg center-block" type="button" onClick="$('#asg2_q2_img').toggleClass('small-img');">
+                <img src="..\media\Asg2_Q2.jpg" id="asg2_q2_img" class="img-responsive img-rounded small-img" alt="Asg2_Q2">
+              </button> 
+            </div><!-- panel-body-->
+          </div><!--panel panel-success-->
+        </div>
+      </div><!--row (Question 2) -->
+
+      <hr>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <table class="table table-bordered table-striped">
+            <tr>
+              <th colspan="4">
+                <h4 align="center"><strong>Question 3</strong></h4>
+              </th>
+            </tr>
+            <tr>
+              <th>Error</th>
+              <th>Description</th>
+              <th>Cause</th>
+              <th>Solution</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Found bug in code before finding during testing</td>
+              <td>CommandButton with ID "submitID", in index.xhtml, had a typo in its 'action' field. It meant to call on the method "profileController.createProfile", however it forgot to capitalize the 'P' in '.createProfile'.</td>
+              <td>Capitalized the 'P'.</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>"Target model Type is no a Collection or Array"</td>
+              <td>The value of "industriesID" in index.xthml (the Industries input) was mistakenly mapped to Position.</td>
+              <td>Changed the mapping of Industries to the variable 'industries'.</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>"Unable to find matching navigation case with from-view-id '/index.xhtml' for action '#{profileController.createProfile()}' with outcome 'error.xhml'".</td>
+              <td>There was no 'error.xhtml' page, let alone an 'error.xhml' page.</td>
+              <td>Created an 'error.xhtml' page and fixed the typo.</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Found bug in code before finding during testing.</td>
+              <td>Password for database connection was in uppercase.</td>
+              <td>Made it lowercase.</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Found bug in code before finding during testing.</td>
+              <td>Redirect to "response.xhtml" was misspelled as "response.html".</td>
+              <td>Changed the '.html' extension to '.xhtml'.</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Via console: "VALUES clause must contain at least one element. Empty elements are not allowed."</td>
+              <td>The SQL command was missing an apostrophe at the end.</td>
+              <td>Added the apostrophe.</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>There were 'br' tags showing up in the output.</td>
+              <td>HTML escapes were not being rendered.</td>
+              <td>Added 'escape="false"' attribute to 'outputText' tag in 'response.xhtml'.</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>When the user didn't enter certain fields, there was still a statement in the output that mentioned the field that the user did not enter.</td>
+              <td>Every single output string was being appended, regardless of input.</td>
+              <td>Added 'if' statements to check if the user kept the fields blank.</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Names with apostrophes in them threw errors.</td>
+              <td>When there were apostrophies, the SQL string was getting messed up because it thought the apostrophe was a VALUE escape.</td>
+              <td>Made code replace all single apostrophes with two single apostrophes. In SQL, single quotes are escaped by double single quotes.</td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <img src="..\media\Asg2_Q3.jpg" id="asg2_q3_img" class="img-responsive img-rounded center-block" alt="Asg2_Q3">
+              </td>
+            </tr>
+          </table><!--table for Question 3 answers-->
+        </div><!--col-xs-12-->
+      </div><!--row-->
+
+      <hr>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h4 align="center"><strong>Question 4</strong>
+            </div>
+            <div class="panel-body">
+              <button type="button" class="btn btn-lg center-block" type="button" onClick="$('#asg2_q4_img').toggleClass('small-img');">
+                <img src="..\media\Asg2_Q4.jpg" id="asg2_q4_img" class="img-responsive img-rounded small-img" alt="Asg2_Q4">
+              </button> 
+            </div><!-- panel-body-->
+          </div><!--panel panel-danger-->
+        </div>
+      </div><!--row (Question 4) -->
+
+      <hr>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="panel panel-warning">
+            <div class="panel-heading">
+              <h4 align="center"><strong>Question 5</strong>
+            </div>
+            <div class="panel-body">
+              <button type="button" class="btn btn-lg center-block" type="button" onClick="$('#asg2_q5_img').toggleClass('small-img');">
+                <img src="..\media\Asg2_Q5.jpg" id="asg2_q5_img" class="img-responsive img-rounded small-img" alt="Asg2_Q5">
+              </button> 
+            </div><!-- panel-body-->
+          </div><!--panel panel-danger-->
+        </div>
+      </div><!--row (Question 4) -->
+
+      <footer>
+        <p>&copy; 2016 ITK353</p>
+      </footer>
+    </div><!--/.container-->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="..\js\offcanvas.js"></script>
+  <script src="..\js\Functions.js"></script>
+  </body>
+</html>
